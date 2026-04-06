@@ -17,3 +17,13 @@ for (let i = 0; i < pronoun.length; i++) {
     }
   }
 }
+
+pronoun.forEach(function(p) {
+  adj.forEach(function(a) {
+    noun.forEach(function(n) {
+      domin.forEach(function(dm) {
+        console.log(p + a + n + dm);
+      });
+    });
+  });
+});
